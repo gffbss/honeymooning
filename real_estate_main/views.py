@@ -11,12 +11,12 @@ def about(request):
 
 
 def contact(request):
-    return render(request, "contact.html", {'contact': contact})
+    return render(request, "contact.html")
 
 
-def loans(request):
-    return render(request, "loans.html", {'loans': loans})
-
-
-def inventory(request):
-    return render(request, "inventory.html", {'inventory': inventory})
+# def loans(request):
+#     return render(request, "loans.html", {'loans': loans})
+#
+#
+# def inventory(request):
+#     return render(request, "inventory.html", {'inventory': inventory})
