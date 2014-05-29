@@ -14,6 +14,10 @@ def contact(request):
     return render(request, "contact.html")
 
 
+def financing(request):
+    return render(request, "financing.html")
+
+
 # def loans(request):
 #     return render(request, "loans.html", {'loans': loans})
 #
