@@ -6,6 +6,10 @@ def home(request):
     return render(request, "index.html")
 
 
+def properties(request):
+    return render(request, "properties.html")
+
+
 def about(request):
     return render(request, "about.html", {'about': about})
 
