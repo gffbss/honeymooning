@@ -1,68 +1,145 @@
-{% extends 'base.html' %}
+{% extends 'index.html' %}
 {% block content %}
 
-
-<div id="contact-form">
+<div class="container">
+<div class="jumbotron jumbotron-sm">
     <div class="container">
-
-        <form class="form-horizontal">
-        <fieldset>
-
-        <!-- Form Name -->
-        <legend>Contact Angela: <h4><a href="mailto:angela@angelasemail.com">angela@angela.com</a></h4></legend>
-        <p>Email:
-            <a href="mailto:angela@angelasemail.com">angela@angela.com</a>
-            or call at
-            <a href="tel:18011234567">801-123-4567</a>
-        </p>
-        <!-- Text input-->
-        <div class="form-group" style="padding-top: 10px">
-          <label class="col-md-4 control-label" for="textinput">Name</label>
-              <div class="col-md-4">
-                 <input id="textinput" name="textinput" type="text" placeholder="First Name" class="form-control input-md" required="">
-
-              </div>
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h1 class="h1" style="padding-top: 50px">
+                    Contact <small>Send Bill a Message</small></h1>
+            </div>
         </div>
-
-        <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="textinput"></label>
-              <div class="col-md-4">
-                  <input id="textinput" name="textinput" type="text" placeholder="Last Name" class="form-control input-md">
-
-              </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="textinput">Phone</label>
-              <div class="col-md-4">
-                  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
-
-              </div>
-        </div>
-
-        <!-- Text input-->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="textinput">Email</label>
-              <div class="col-md-4">
-                  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
-
-              </div>
-        </div>
-
-        <!-- Textarea -->
-        <div class="form-group">
-          <label class="col-md-4 control-label" for="textarea">Notes</label>
-              <div class="col-md-4">
-                <textarea class="form-control" id="textarea" placeholder="What are you looking for?" name="textarea"></textarea>
-              </div>
-        </div>
-
-        </fieldset>
-            <button id="submit-btn" class="the_btn btn-block btn-large light form_send_element"">Send</button>
-        </form>
     </div>
 </div>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="well well-sm">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">
+                                    Email Address</label>
+                                <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">
+                                    Subject</label>
+                                <select id="subject" name="subject" class="form-control" required="required">
+                                    <option value="na" selected="">Choose One:</option>
+                                    <option value="service">Looking to Buy</option>
+                                    <option value="suggestions">Looking to Sell</option>
+                                    <option value="questions">Have some questions</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="name">
+                                    Message</label>
+                                <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                          placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                Send Message</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <form>
+                <legend><span class="glyphicon glyphicon-globe"></span> Our office</legend>
+                <address>
+                    <strong>Twitter, Inc.</strong><br>
+                    795 Folsom Ave, Suite 600<br>
+                    San Francisco, CA 94107<br>
+                    <abbr title="Phone">
+                        P:</abbr>
+                    (123) 456-7890
+                </address>
+                <address>
+                    <strong>Full Name</strong><br>
+                    <a href="mailto:#">bill.gates@realtor.com</a>
+                </address>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--<div id="contact-form">-->
+    <!--<div class="container">-->
+
+        <!--<form class="form-horizontal">-->
+        <!--<fieldset>-->
+
+        <!--&lt;!&ndash; Form Name &ndash;&gt;-->
+        <!--<legend>Contact Angela: <h4><a href="mailto:angela@angelasemail.com">angela@angela.com</a></h4></legend>-->
+        <!--<p>Email:-->
+            <!--<a href="mailto:angela@angelasemail.com">angela@angela.com</a>-->
+            <!--or call at-->
+            <!--<a href="tel:18011234567">801-123-4567</a>-->
+        <!--</p>-->
+        <!--&lt;!&ndash; Text input&ndash;&gt;-->
+        <!--<div class="form-group" style="padding-top: 10px">-->
+          <!--<label class="col-md-4 control-label" for="textinput">Name</label>-->
+              <!--<div class="col-md-4">-->
+                 <!--<input id="textinput" name="textinput" type="text" placeholder="First Name" class="form-control input-md" required="">-->
+
+              <!--</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Text input&ndash;&gt;-->
+        <!--<div class="form-group">-->
+          <!--<label class="col-md-4 control-label" for="textinput"></label>-->
+              <!--<div class="col-md-4">-->
+                  <!--<input id="textinput" name="textinput" type="text" placeholder="Last Name" class="form-control input-md">-->
+
+              <!--</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Text input&ndash;&gt;-->
+        <!--<div class="form-group">-->
+          <!--<label class="col-md-4 control-label" for="textinput">Phone</label>-->
+              <!--<div class="col-md-4">-->
+                  <!--<input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">-->
+
+              <!--</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Text input&ndash;&gt;-->
+        <!--<div class="form-group">-->
+          <!--<label class="col-md-4 control-label" for="textinput">Email</label>-->
+              <!--<div class="col-md-4">-->
+                  <!--<input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">-->
+
+              <!--</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Textarea &ndash;&gt;-->
+        <!--<div class="form-group">-->
+          <!--<label class="col-md-4 control-label" for="textarea">Notes</label>-->
+              <!--<div class="col-md-4">-->
+                <!--<textarea class="form-control" id="textarea" placeholder="What are you looking for?" name="textarea"></textarea>-->
+              <!--</div>-->
+        <!--</div>-->
+
+        <!--</fieldset>-->
+            <!--<button id="submit-btn" class="the_btn btn-block btn-large light form_send_element"">Send</button>-->
+        <!--</form>-->
+    <!--</div>-->
+<!--</div>-->
 
 {% endblock %}
