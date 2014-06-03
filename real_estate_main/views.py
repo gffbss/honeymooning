@@ -27,6 +27,10 @@ def financing(request):
     return render(request, "financing.html")
 
 
+def testpage(request):
+    return render(request, "testpage.html")
+
+
 # class ContactView(CreateView):
 #     model = ContactForm
 #     form_class = ContactForm
