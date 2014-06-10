@@ -1,5 +1,7 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
+
+
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -18,7 +20,7 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 
 # Not certain it should be 'honeymooning...' or 'real_estate_main...'
-    (r'^$', 'honeymooning.blog.views.index'),
+    (r'^$', 'real_estate_main.homess.views.index'),
     url(r'^homess/view/(?P<slug>[^\.]+).html', 'real_estate_main.homess.views.view_post', name='view_homess_post'),
     url(r'^homess/category/(?P<slug>[^\.]+).html', 'real_estate_main.homess.views.view_category', name='view_homess_category'),
 )

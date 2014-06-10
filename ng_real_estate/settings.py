@@ -38,7 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'south',
     'real_estate_main',
-    'real_estat_main.homess',
+    'real_estate_main.homess',
 )
 
 MIDDLEWARE_CLASSES = (
