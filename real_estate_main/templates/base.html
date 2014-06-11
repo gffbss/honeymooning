@@ -27,40 +27,93 @@
 </head>
 <body>
 <!-- NAVBAR ================================================== -->
+<!--<header>-->
+    <!--<div class="navbar navbar-inverse navbar-static-top">-->
+        <!--<div class="navbar-inner">-->
+            <!--<div class="container">-->
+              <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
 
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                    <!--<span class="icon-bar"></span>-->
+                <!--</button>-->
+                <!--<div class="navbar-collapse collapse">-->
+                    <!--<ul class="nav">-->
+                        <!--<li class="active"><a href="index.html"><i class="icon-home">Home</i></a></li>-->
+
+
+                        <!--<li><a href="contact.html" title="Contact us">Contact us</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div id="logo-container">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="span8">-->
+                <!--<a class="brand" href="index.html"><span class="logo-text">Realto</span></a>-->
+                <!--<span class="tag-line hidden-phone">Your tag line here</span>-->
+            <!--</div>-->
+            <!--<div class="span4">-->
+                <!--<div class="phone-number pull-right"><i class="icon-phone"></i> Call Us: <strong>1 (800) 765 4321</strong></div>&lt;!&ndash;/phone-number&ndash;&gt;-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--&lt;!&ndash; #logo-container &ndash;&gt;-->
+
+<!--</header>-->
     <div class="navbar-wrapper">
       <div class="container">
 
         <!--<div class="navbar navbar-inverse navbar-static-top" role="navigation">-->
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="border-radius: 0 !important">
         <!--<div class="navbar navbar-default navbar-fixed-top" role="navigation">-->
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="{% url 'home' %}">Bill's Listings</a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class=""><a href="{% url 'home' %}">Home</a></li>
-                <li class=""><a href="{% url 'properties' %}">Properties</a></li>
-                <li class=""><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'contact' %}">Contact</a></li>
-                <li><a href="{% url 'financing' %}">Financing</a></li>
-                <li><a href="{% url 'testpage' %}">Test Page</a></li>
-              </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a href="tel:18011234567" style="margin-right: 30px">Call: 801-123-4567</a></li>
+            <div class="navbar-inner">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <!--<a class="navbar-brand" href="{% url 'home' %}">Bill's Listings</a>-->
+                </div>
+                <div class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li class=""><a href="{% url 'home' %}" class="glyphicon glyphicon-home"></a></li>
+                    <li class=""><a href="{% url 'properties' %}">Properties</a></li>
+                    <li class=""><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'financing' %}">Financing</a></li>
+                    <li><a href="{% url 'testpage' %}">Test Page</a></li>
                   </ul>
+                      <ul class="nav navbar-nav navbar-right pull-right">
+                        <li><a href="tel:18011234567" >Call: 801-123-4567</a></li>
+                      </ul>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
 
       </div>
+        <div id="logo-container" >
+        <div class="container" style="padding-top: 30px; padding-bottom: 22px">
+            <div class="row">
+                <div class="span8">
+                    <a class="navbar-brand logo" href="index.html" ><span style="padding-top: 30px; padding-bottom: 22px">Bill Gates</span></a>
+                    <span class="tag-line hidden-phone">Your tag line here</span>
+                </div>
+                <div class="span4">
+                    <div class="phone-number pull-right"><i class="icon-phone"></i> Call Us: <strong>1 (800) 765 4321</strong></div><!--/phone-number-->
+                </div>
+            </div>
+        </div>
+    <!-- #logo-container -->
+
+
     </div>
 
 
