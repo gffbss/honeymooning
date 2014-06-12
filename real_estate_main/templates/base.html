@@ -90,9 +90,9 @@
                     <li><a href="{% url 'financing' %}">Financing</a></li>
                     <li><a href="{% url 'testpage' %}">Test Page</a></li>
                   </ul>
-                      <ul class="nav navbar-nav navbar-right pull-right">
-                        <li><a href="tel:18011234567" >Call: 801-123-4567</a></li>
-                      </ul>
+                      <!--<ul class="nav navbar-nav navbar-right pull-right">-->
+                        <!--<li><a href="tel:18011234567" >Call: 801-123-4567</a></li>-->
+                      <!--</ul>-->
                 </div>
               </div>
             </div>
@@ -100,14 +100,22 @@
 
       </div>
         <div id="logo-container" >
-        <div class="container" style="padding-top: 30px; padding-bottom: 22px">
+        <div class="container" style="padding-top: 30px; padding-bottom: 8px">
             <div class="row">
                 <div class="span8">
-                    <a class="navbar-brand logo" href="index.html" ><span style="padding-top: 30px; padding-bottom: 22px">Bill Gates</span></a>
-                    <span class="tag-line hidden-phone">Your tag line here</span>
+                    <a class="navbar-brand logo" href="{% url 'home' %}" >
+                        <span>
+                            <b id="black">Bill Gates</b>
+                            <!--<p>|   Your Utah Expert</p>-->
+                        </span></a>
+                    <!--<span class="tag-line hidden-phone">   |   Your Utah Expert</span>-->
+                    <!--<p style="padding-top: 30px">   |   Your Utah Expert</p>-->
+
                 </div>
-                <div class="span4">
-                    <div class="phone-number pull-right"><i class="icon-phone"></i> Call Us: <strong>1 (800) 765 4321</strong></div><!--/phone-number-->
+                <div class="pull-right" style="padding-top: 17px">
+                    <i class="glyphicon glyphicon-phone"></i>
+                    <a href="tel:18011234567">Call: <strong>801-123-4567</strong></a>
+                    <!--<div class="phone-number pull-right" style="padding-top: 17px" a href="tel:18011234567"><i class="glyphicon glyphicon-phone"></i> Call Us: <strong>1 (800) 765 4321</strong></div>&lt;!&ndash;/phone-number&ndash;&gt;-->
                 </div>
             </div>
         </div>
