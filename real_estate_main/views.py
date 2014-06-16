@@ -49,8 +49,8 @@ def financing(request):
     return render(request, "financing.html")
 
 
-def testpage(request):
-    return render(request, "testpage.html")
+def property(request):
+    return render(request, "property.html")
 
 
 # class ContactView(CreateView):
