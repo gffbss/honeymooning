@@ -53,6 +53,10 @@ def property(request):
     return render(request, "property.html")
 
 
+def testpage(request):
+    return render(request, "testpage.html")
+
+
 # class ContactView(CreateView):
 #     model = ContactForm
 #     form_class = ContactForm

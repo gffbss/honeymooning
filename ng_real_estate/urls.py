@@ -12,6 +12,7 @@ urlpatterns = patterns('',
     url(r'^contact/', 'real_estate_main.views.contact', name='contact'),
     url(r'^financing/', 'real_estate_main.views.financing', name='financing'),
     url(r'^property/', 'real_estate_main.views.property', name='property'),
+    url(r'^testpage/', 'real_estate_main.views.testpage', name='testpage'),
     # url(r'^contact/thankyou/', 'contacts.views.thankyou'),
     # url(r'^contactt/', 'contacts.views.contactview'),
 
