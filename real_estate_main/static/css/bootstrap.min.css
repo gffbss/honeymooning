@@ -5954,7 +5954,16 @@ button.close {
   td.visible-xs {
     display: table-cell !important;
   }
+  #logo-container{
+  padding-top: 25px
+  }
+  #phone-num {
+      padding-right: 20px;
+  }
 }
+}
+
+
 @media (min-width: 768px) and (max-width: 991px) {
   .visible-sm {
     display: block !important;
